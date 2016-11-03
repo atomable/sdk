@@ -11,7 +11,7 @@ yarn add atomable-sdk
 
 #### importing
 
-`sdk.js` can be required directly for es next project or you can use the `sdk-min.js` for all legacy applications.
+`sdk.js` can be required directly.
 
 ```javascript
 var at = require('atomable-sdk');
