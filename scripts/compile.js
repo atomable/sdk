@@ -14,5 +14,5 @@ exec(`babel src -s -d dist --minified --compact --no-comments`, (error, stdout, 
     console.error(error);
   }
   console.log(stdout);
-  console.log(`prebublish done`);
+  console.log(`compile done`);
 });
