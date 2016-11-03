@@ -2,7 +2,7 @@
 /* global module, describe, it */
 'use strict';
 
-import { run, promisify } from './sdk.js';
+import { run, promisify } from '../dist/sdk.js';
 import should from 'should';
 
 describe('A generator', () => {

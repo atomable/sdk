@@ -3,13 +3,12 @@
   "version": "1.0.1",
   "homepage": "https://github.com/atomable/sdk/",
   "description": "atomable software development kit",
-  "main": "npm/sdk-min.js",
+  "main": "npm/sdk.js",
   "scripts": {
-    "postinstall": "npm install -g babel-cli",
-    "pretest": "node_modules/.bin/babel ./src/sdk.js -o ./test/sdk.js",
-    "test": "node_modules/.bin/mocha --require babel-register --require babel-polyfill",
-    "prepublish": "node scripts/prepublish",
-    "coverage": "babel src/sdk.js -o test/sdk.js && babel test --out-dir babel && istanbul cover node_modules/mocha/bin/_mocha --require babel-register --require babel-polyfill babel"
+    "pretest": "node scripts/compile",
+    "test": "mocha --require babel-register --require babel-polyfill",
+    "prepublish": "node scripts/compile",
+    "coverage": "babel test --out-dir babel && istanbul cover node_modules/mocha/bin/_mocha --require babel-register --require babel-polyfill babel"
   },
   "author": "atomable",
   "license": "MIT",

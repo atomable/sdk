@@ -2,7 +2,7 @@
 /* global module, describe, it */
 'use strict';
 
-import { promisify } from './sdk.js';
+import { promisify } from '../dist/sdk.js';
 import should from 'should';
 
 describe('A promise', () => {
