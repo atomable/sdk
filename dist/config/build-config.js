@@ -1,0 +1,2 @@
+'use strict';Object.defineProperty(exports,'__esModule',{value:true});exports.buildConfig=undefined;var _findConfigFiles=require('./find-config-files');var _extractConfig=require('./extract-config');var _mergeConfigs=require('./merge-configs');var buildConfig=exports.buildConfig=function buildConfig(basePath){basePath=basePath||process.cwd();return(0,_mergeConfigs.mergeConfigs)((0,_findConfigFiles.findConfigFiles)(basePath).map(_extractConfig.extractConfig))};
+//# sourceMappingURL=build-config.js.map

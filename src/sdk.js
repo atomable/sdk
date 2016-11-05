@@ -2,6 +2,8 @@
 /* global module, process */
 'use strict';
 
+import { buildConfig } from './config/build-config';
+
 const isFunction =
   func =>
     !!(func && func.constructor && func.call && func.apply);
@@ -32,3 +34,4 @@ export const run = (generator) => {
   return iterate(iterator.next());
 };
 
+export const buildRuntimeConfig = buildConfig;

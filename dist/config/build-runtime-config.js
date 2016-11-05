@@ -1,0 +1,2 @@
+'use strict';Object.defineProperty(exports,'__esModule',{value:true});exports.buildRuntimeConfig=undefined;var _findConfigFiles=require('./find-config-files');var _extractConfig=require('./extract-config');var _mergeConfigs=require('./merge-configs');var buildRuntimeConfig=exports.buildRuntimeConfig=function buildRuntimeConfig(basePath){basePath=basePath||process.cwd();return(0,_mergeConfigs.mergeConfigs)((0,_findConfigFiles.findConfigFiles)(basePath).map(_extractConfig.extractConfig))};
+//# sourceMappingURL=build-runtime-config.js.map
