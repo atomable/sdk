@@ -1,5 +1,8 @@
 # atomable software development kit
 
+## Issues & Docs
+https://github.com/atomable/atomable
+
 ## Installation
 
 ### [npm](https://www.npmjs.com/package/atomable-sdk)
